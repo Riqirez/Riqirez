@@ -5,19 +5,18 @@ int main() {
 	int a,b,c,res;
 	cin >> a >> b >> c;
 
-	if(a>b) // a가 중앙값
+	if( (a>b && a<c) || (a>c && a<b) )// a가 중앙값
 	{
-		if (a < c) { cout << a << endl; return 0; }
+		cout << a << endl;
 	}
-	if (b > a) // b가 중앙값
+	else if ((b > a && b < c) || (b > c && b < a)) // b가 중앙값
 	{
-		if (b < c) { cout << b << endl; return 0; }
+		cout << b << endl;
 	}
-	if (c > a) // c가 중앙값
+	else if ((c > b && c < a) || (c > a && c < b)) // c가 중앙값
 	{
-		if (c < b) { cout << c << endl; return 0; }
+		cout << c << endl;
 	}
-	
 
 	return 0;
 }
