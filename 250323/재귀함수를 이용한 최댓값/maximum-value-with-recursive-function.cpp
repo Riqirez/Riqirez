@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 
 int findMax(int arr[], int n, int index = 0, int maxVal = INT_MIN) {
