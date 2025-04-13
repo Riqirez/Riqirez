@@ -7,7 +7,7 @@ int N;
 int f(int n) {
     if (n <= 1) return 0;
 
-    if (n % 2) {
+    if (n % 2==0) {
         return f(n / 2)+ 1;
     }
     else {
