@@ -5,7 +5,7 @@ using namespace std;
 int N;
 
 int f(int n) {
-    if (n <= 1) return 0;
+    if (n < 1) return 0;
     return f(n / 10) + (n % 10)* (n % 10);
 }
 
