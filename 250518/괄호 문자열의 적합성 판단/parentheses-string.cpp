@@ -15,7 +15,7 @@ int main() {
         }
         else if (str[i] == ')') {
             if (s.empty()) {
-                cerr << "No";
+                cout << "No" << endl;
                 return 0;
             }
 
