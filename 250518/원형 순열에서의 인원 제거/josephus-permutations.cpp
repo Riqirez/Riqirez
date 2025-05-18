@@ -12,7 +12,6 @@ int main() {
         q.push(i);
     }
 
-    cout << "<";
     while (!q.empty()) {
         // K-1명을 뒤로 보냄
         for (int i = 0; i < K - 1; i++) {
@@ -26,7 +25,7 @@ int main() {
 
         if (!q.empty()) cout << ", ";
     }
-    cout << ">\n";
+
 
     return 0;
 }
