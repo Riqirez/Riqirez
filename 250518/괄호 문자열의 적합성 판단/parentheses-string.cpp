@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <stack>
+using namespace std;
+
+string str;
+stack <char> s;
+
+int main() {
+    cin >> str;
+
+    for (int i = 0; i < str.length(); i++) {
+        if (str[i] == '(') {
+            s.push('(');
+        }
+        else if (str[i] == ')') {
+            if (s.empty()) {
+                cerr << "No";
+                return -1;
+            }
+
+            s.pop();
+        }
+    }
+    
+    if (!s.empty()) {
+        cout << "No" << '\n';
+        return -1;
+    }
+    else cout << "Yes" << '\n';
+
+    return 0;
+}
