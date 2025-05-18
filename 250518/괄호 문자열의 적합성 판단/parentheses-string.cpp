@@ -16,7 +16,7 @@ int main() {
         else if (str[i] == ')') {
             if (s.empty()) {
                 cerr << "No";
-                return -1;
+                return 0;
             }
 
             s.pop();
@@ -25,7 +25,6 @@ int main() {
     
     if (!s.empty()) {
         cout << "No" << '\n';
-        return -1;
     }
     else cout << "Yes" << '\n';
 
