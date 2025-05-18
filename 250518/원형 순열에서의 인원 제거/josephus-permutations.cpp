@@ -23,7 +23,7 @@ int main() {
         cout << q.front();
         q.pop();
 
-        if (!q.empty()) cout << ", ";
+        if (!q.empty()) cout << " ";
     }
 
 
