@@ -6,6 +6,6 @@ int main() {
     cin >> h;
     cin.get();
     cin >> m;
-    cout << h << ':' << m << endl;
+    cout << h+1 << ':' << m << endl;
     return 0;
 }
