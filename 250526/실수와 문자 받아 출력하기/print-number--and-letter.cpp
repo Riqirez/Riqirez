@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     char c;
-    int a, b;
+    double a, b;
     cin >> c >> a >> b;
     cout << fixed;
     cout.precision(2);
