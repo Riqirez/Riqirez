@@ -8,12 +8,12 @@ int main(){
 
     int a, b;
     cin >> a >> b;
-    int sum = a+b;
-    int sub = a-b;
+    float sum = a+b;
+    float sub = a-b;
     cout.fixed;
     cout.precision(3);
 
-    cout << (float)sum / sub;
+    cout << sum / sub;
 
     return 0;
 }
