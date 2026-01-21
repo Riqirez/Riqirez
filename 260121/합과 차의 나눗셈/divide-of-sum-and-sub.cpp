@@ -10,8 +10,8 @@ int main(){
     cin >> a >> b;
     float sum = a+b;
     float sub = a-b;
-    cout.fixed;
-    cout.precision(3);
+    cout << fixed;
+    cout.precision(2);
 
     cout << sum / sub;
 
