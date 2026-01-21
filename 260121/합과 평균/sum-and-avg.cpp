@@ -10,7 +10,11 @@ int main(){
     cin >> a >> b;
     float sum = a+b;
 
-    cout << sum << ' ' << (double)sum / 2;
+    
+    cout << sum << ' ';
+    cout << fixed;
+    cout.precision(1);
+    cout << (float)sum / 2;
 
     return 0;
 }
