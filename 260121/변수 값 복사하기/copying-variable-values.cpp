@@ -8,7 +8,7 @@ int main(){
     int c=3;
 
     a=b=c;
-    cout << a << '\n' << b << '\n' << c;
+    cout << a << ' ' << b << ' ' << c;
 
     return 0;
 }
