@@ -9,6 +9,6 @@ int main() {
     int a;
     cin >> a;
     cout << boolalpha;
-    cout << (a%2==1 && a%3==0) || (a%2==0 && a%5==0);
+    cout << ((a%2==1) && (a%3==0)) || ((a%2==0) && (a%5==0));
     return 0;
 }
