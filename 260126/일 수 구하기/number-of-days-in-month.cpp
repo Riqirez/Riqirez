@@ -8,10 +8,8 @@ int main() {
     
     int n;
     cin >> n;
-    if(n==2) {
-        cout << 28;
-        return 0;
-    }
-    cout << (n%2==0 ? 30 : 31);
+    int arr[12] = {31,28,31,30,31,30
+                  ,31,30,30,31,30,31};
+    cout << arr[n];
     return 0;
 }
