@@ -4,12 +4,12 @@ using namespace std;
 
 void myswap(int &small, int &big){
     if(small > big){
-        small*=2;
-        big+=25;
+        big*=2;
+        small+=25;
     }
     else{
-    big*=2;
-    small+=25;
+    small*=2;
+    big+=25;
     }
 }
 
