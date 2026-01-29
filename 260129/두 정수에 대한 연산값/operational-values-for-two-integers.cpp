@@ -6,7 +6,7 @@ void swap(int &small, int &big){
     if(small > big){
         int temp=small;
         small = big;
-        big = small;
+        big = temp;
     }
     small*=2;
     big+=25;
