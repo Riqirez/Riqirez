@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void swap(int &small, int &big){
+void myswap(int &small, int &big){
     if(small > big){
         int temp=small;
         small = big;
@@ -18,7 +18,7 @@ int main(){
 
     int s,b;
     cin >> s >> b;
-    swap(s,b);
+    myswap(s,b);
     cout << s << ' ' << b;
 
     return 0;
