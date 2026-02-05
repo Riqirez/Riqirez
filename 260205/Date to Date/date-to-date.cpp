@@ -6,7 +6,7 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int const arr[13] = {0,31,28,31,30,31,30,31,30,30,31,30,31};
+    int const arr[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     int m1,d1,m2,d2,sum=1;
     cin >> m1 >> d1 >> m2 >> d2;
     
