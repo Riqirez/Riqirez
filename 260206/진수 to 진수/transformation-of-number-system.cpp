@@ -10,22 +10,19 @@ int main(){
     cin.tie(nullptr);
 
     const string table = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    int a, b, sum=0;
+    int a, b;
+    long long sum=0;
     string n = "";
     string s = "";
     cin >> a >> b >> n;
 
-    reverse(n.begin(), n.end());
-    while(n.size()){
-        sum = sum*a + (table[n[n.size()-1]%a]-'0');
-        n.pop_back();
-    }
+    for(int i: n) sum = sum*a + (i - '0');
 
     while(sum){
         s.push_back(sum%b + '0');
         sum/=b;
     }
     reverse(s.begin(), s.end());
-    cout << s;
+    std::cout << s;
     return 0;
 }
