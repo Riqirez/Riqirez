@@ -15,6 +15,7 @@ int main(){
     string s = "";
     cin >> a >> b >> n;
 
+    reverse(n.begin(), n.end());
     while(n.size()){
         sum = sum*a + (table[n[n.size()-1]%a]-'0');
         n.pop_back();
