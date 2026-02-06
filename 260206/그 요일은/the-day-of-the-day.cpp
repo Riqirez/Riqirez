@@ -18,8 +18,8 @@ int main(){
     cin >> m1 >> d1 >> m2 >> d2;
     cin >> s;
 
-    const int diff = ((arr[m2] + d2) - (arr[m1] + d1));
+    const int diff = ((arr[m2] + d2) - (arr[m1] + d1)) - myfind(s);
 
-    cout << (diff+myfind(s))/7;
+    cout << (diff > 0 ? diff/7 + 1 : diff/7);
     return 0;
 }
