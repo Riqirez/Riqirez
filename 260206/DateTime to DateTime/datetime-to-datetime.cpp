@@ -8,8 +8,9 @@ int main(){
 
     int d,h,m;
     cin >> d >> h >> m;
-
-    cout << (d*24*60 + h*60 + m) - (11*24*60 + 11*60 + 11);
+    
+    int result  = (d*24*60 + h*60 + m) - (11*24*60 + 11*60 + 11);
+    cout << (result>=0 ? result : -1);
 
     return 0;
 }
