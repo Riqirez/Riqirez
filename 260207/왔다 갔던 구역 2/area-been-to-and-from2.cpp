@@ -9,22 +9,20 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int PT = 1000;
+    int N, cnt=0, PT = 1000;
     int arr[2000] = {0};
-    int N;
     cin >> N;
+    
     while(N--){
         int x;
         char y;
         cin >> x >> y;
-        if(y=='R'){
-        for(int i=PT; i<PT+x; i++) ++arr[i];
-        }
-        else{
-        for(int i=PT; i>PT-x; i--) ++arr[i];
-        }
+        if(y=='R') while(x--) ++arr[PT++];
+        else while(x--) ++arr[--PT];
     }
 
-    cout << *max_element(arr,arr+2000);
+    for(int i=0; i<2000; i++) if(arr[i]>=2) ++cnt;
+
+    cout << cnt;
     return 0;
 }
